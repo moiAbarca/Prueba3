@@ -10,6 +10,25 @@ var users = require('./routes/users');
 
 var app = express();
 
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'juan11',
+  database : 'Liguria'
+});
+
+connection.connect();
+
+connection.query('SELECT * from < table name >', function(err, rows, fields) {
+  if (!err)
+    console.log('The solution is: ', rows);
+  else
+    console.log('Error while performing Query.');
+});
+
+connection.end();
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
