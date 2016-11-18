@@ -10,6 +10,7 @@ var users = require('./routes/users');
 
 var app = express();
 
+//Conección con BD MySql
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
@@ -28,6 +29,7 @@ connection.query('SELECT * from < table name >', function(err, rows, fields) {
 });
 
 connection.end();
+//término de conección
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

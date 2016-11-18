@@ -3,13 +3,18 @@
     Free  Template by Mohamed Sobhy
     https://www.facebook.com/Mido.HHH
 -->
-<html lang="en">
+<html lang="sp">
+
 <head>
-	<title>King Of Pasta</title>
+	<title>Restaurante Liguria</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="../public/js/jquery.js"></script>
 	<script src="../public/js/jquery.glide.js"></script>
+
+    <meta name="viewport" content="width=device-width"; initial-scale="1.0">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/css/style.css">
       <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/css/animate.css">
@@ -34,19 +39,25 @@ new WOW().init();
 
 </head>
 <body>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
 
 <!--============ Navigation ============-->
 
 <div class="headerwrapper">
 	<div id="header" class="container">
-		<div class="logo"> <a href="#"><img src="../public/images/LOGO.png" alt="logo" width="165" height="74"></a> </div> <!--end of Logo-->
+		<div class="logo"> <a href="#navigations"><img src="../public/images/LOGO.png" alt="logo" width="165" height="74"></a> </div> <!--end of Logo-->
         <nav>
             <ul id="navigations">
                 <li><a href="#navigations">HOME</a></li>
-                <li> <a href="#slider">ABOUT</a></li>
-                <li><a href="#map">LOCATONS</a></li>
+                <li> <a href="#slider">ACERCA DE</a></li>
+                <li><a href="#map">UBICACIÓN</a></li>
                 <li><a href="#bestdishes">MENU</a></li>
-                <li><a href="#contactus">CONTACT</a></li>
+                <li><a href="#contactus">CONTÁCTANOS</a></li>
+                <li><a href="#Sesion">SESIÓN</a></li>
             </ul>
         </nav>
       </div> <!--end of header-->
@@ -62,12 +73,9 @@ new WOW().init();
            <div class="slider">
       			<ul class="slides">
     		 	 	  <li class="slide">
-                      	<h5 class="wow fadeInDown" data-wow-delay="0.8s">What is Pasta ? </h5>
-                      	<p class="wow fadeInUp" data-wow-delay="0.8s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                          type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-                           also the leap into 
-                         electronic typesetting</p>
+                      	<h5 class="wow fadeInDown" data-wow-delay="0.8s">Quienes Somos?</h5>
+                      	<p class="wow fadeInUp" data-wow-delay="0.8s">El Restaurant "Liguria" es un local familiar, con 30 años en el rubro de la gastronomía.
+                            Dado el carácter familiar del negocio, éste se basa en ofrecer una atención personalizada a cada cliente que acude al local.</p>
                       <img src="../public/images/slideimg.png" width="317" height="256" class="wow fadeInRight"
                            data-wow-delay="0.8s" alt="slide1img">
                       </li>
@@ -268,38 +276,24 @@ new WOW().init();
             
             
         </div>
-        <div class="socialize">
-        
-      <h2>Socialize</h2>
-        <div class="socialimgs">
-          <a href="https://www.facebook.com/Mido.HHH"><img src="../public/images/fb.png" width="68" height="68" class="facebook"
-                                                           alt="fb"></a>
-        <a href="https://twitter.com/Mido_A7X"><img src="../public/images/twitter.png" width="68" height="68" class="twitter"
-                                                    alt="twitter"></a>
-        <a href="#"><img src="../public/images/youtube.png" width="68" height="69" class="youtube" alt="youtube"></a>
-        <a href="#"><img src="../public/images/g+.png" width="68" height="68" class="google" alt="g+"></a>
-          <a href="#"><img src="../public/images/message.png" width="68" height="68" class="message" alt="message"></a>
-      </div> <!--end of social imgs-->
-      
-       </div>
       
       
-<div class="sendfeedback">
-  	  <h2>Send Feedback</h2>
+<div class="IniciarSesion">
+    <div id="Sesion" class="container">
+  	  <h2></h2>
             <form>
-            <h6>Your Name:</h6>
-            <input type="text" class="yourname" >
-             <h6>Mobile Number :</h6>
-            <input type="text" class="mobilenumber">
-             <h6>Message :</h6>
-            <textarea></textarea>
-            
-            <button>SUBMIT </button>
+            <font color="#f0ffff"> <h4>USUARIO:</h4></font>
+            <input type="text" class="userID" >
+            <font color="#f0ffff"> <h4>PASSWORD:</h4></font>
+            <input type="text" class="password">
+            <br><br>
+            <button>INICIAR SESIÓN</button>
+
             
             
             
             </form>
-        
+        </div>
         </div> <!-- end of feedback-->
         
     
@@ -315,54 +309,7 @@ new WOW().init();
 <!--============ COPYRIGHTS ============-->
 
 
-<div class="copyrightswrapper">
-    <div id="copyrights" class="container">
-    
- 	   <p>Copyright 2014 <a href="https://www.facebook.com/Mido.HHH"> Mohamed Sobhy </a> All Rights Reserved</p>
-    
-    </div> <!-- end of copyrights-->
-</div> <!-- end of website-->
-	
 
-
-
-<div class="fixedsocial">
-<a href="https://www.facebook.com/Mido.HHH"><img src="../public/images/facebook.png" width="20" height="20" alt="fb"> </a>
-<a href="https://www.behance.net/Mido_HHH"><img src="../public/images/behance.png" width="20" height="20" alt="behance"> </a>
-
-
-
-
-</div>
-
-<script type="text/javascript">
-    $('.sliderwrapper .slider').glide({
-		autoplay: 7000,
-		animationDuration: 3000,
-		arrows: true,
-		
-		
-	
-		});
-	
-</script>
-	
-    <script type="text/javascript">
-    $('.bestdisheswrapper .slider').glide({
-		autoplay: false,
-		animationDuration: 700,
-		arrows: true,
-		navigation:false,
-		
-		
-	
-		});
-	
-	
-</script>
-	
-   
-   
 
 </body>
 
